@@ -1,0 +1,90 @@
+*{  padding: 0;
+    margin: 0;
+    font-family: 'Urbanist', sans-serif;
+}
+
+
+html{
+    overflow-x: hidden;
+    font-size:80%;
+}
+
+html::-webkit-scrollbar{
+    width: 0.5rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+    border-radius: 5rem;
+    background:#030311;
+
+}
+
+.banner{
+    width: 100vw;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    position: fixed;
+    z-index: 100;
+}
+
+.banner a{
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.banner a li{
+    list-style: none;
+}
+
+.banner a li:hover{
+ color: #B3A7A7;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 40px;
+}
+
+.row{
+    width:24.3%;
+    margin: 0.3rem;
+}
+
+.row img{
+   width: 100%;
+}
+
+footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: black;
+    color: white;
+    font-size: 2vmin;
+}
+
+@media(max-width: 991px){
+    .row{
+        width:40%;
+        margin: 0.3rem;
+    }
+}
+
+@media(max-width: 761px) {
+    .row{
+        width: 85%;
+        margin: 0.3;
+    }
+}

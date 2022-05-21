@@ -1,0 +1,136 @@
+*{  padding: 0;
+    margin: 0;
+    font-family: 'Urbanist', sans-serif;
+    box-sizing: border-box;
+}
+
+
+html{
+    overflow-x: hidden;
+    font-size:80%;
+}
+
+html::-webkit-scrollbar{
+    width: 0.5rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+    border-radius: 5rem;
+    background:#030311;
+
+}
+
+.banner{
+    position: fixed;
+    z-index: 100;
+    width: 100vw;
+    height: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+}
+
+.banner a{
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.banner a li{
+    list-style: none;
+}
+
+.banner a li:hover{
+ color: #B3A7A7;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: row;
+    padding: 60px 0;
+}
+
+
+.prices{
+    position: fixed;
+    right: 0;
+    top:0;
+    width: 350px;
+    height: 100%;
+    padding: 100px;
+    padding-left: 50px;
+    padding-right: 10px;
+}
+
+.prices h1{
+    text-decoration: underline;
+}
+
+.prices li{
+    list-style: none;
+    font-size: 15px;
+    padding-top: 5px;
+}
+
+.prices p{
+    padding-top: 30px;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-right: 300px;
+}
+
+.row{
+    width:40%;
+    margin: 0.3rem;
+}
+
+.row img{
+   width: 100%;
+}
+
+footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: black;
+    color: white;
+    font-size: 2vmin;
+}
+
+@media(max-width: 991px){
+    .row{
+        width:40%;
+        margin: 0.3rem;
+    }
+
+    .wrapper{
+        flex-direction: column-reverse;
+    }
+
+    .prices{
+        width: 100%;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 20px 30px;
+    }
+}
+
+@media(max-width: 761px) {
+    .row{
+        width: 80%;
+        margin: 0.3;
+    }
+}

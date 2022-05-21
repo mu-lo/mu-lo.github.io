@@ -1,0 +1,513 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Urbanist', sans-serif;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    transition: ease-in 0.3s;
+}
+
+html::-webkit-scrollbar{
+ width: 0.5rem;
+}
+
+html::-webkit-scrollbar-track{
+  background: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+    border-radius: 5rem;
+    background: black;
+
+}
+
+#BannerContainer{
+    width: 100vw;
+    height: 100vh;
+    background: url(../Images/gallery/IMG_1087-3.jpg);
+    background-position: center center;
+    background-size: cover;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+
+.Nav{
+    position: fixed;
+    top: 0%;
+    left: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-content: center;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding: 20px 40px;   
+}
+
+.sticky{
+    width: 100vw;
+    background: black;
+    z-index: 100;
+}
+
+.Navlist{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Navlist a{
+    margin: 10px 50px;
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.Navlist a:hover{
+    color: #549275;
+}
+
+.btn{
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    display: none;
+
+}
+
+
+ #Logo{
+    font-size: 30px;
+    color: white; 
+}
+
+#BannerContainer .bannerInfo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+    width: 90%;
+}
+
+#Info-section h1{
+    padding-top: 8rem;
+    font-size: 5vmin;
+}
+
+#Info-section p{
+    font-size: 3vmin;
+    padding: 40px 0;
+}
+
+#Info-section button{
+    margin: 3rem 0;
+    font-size: 4vmin;
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+    cursor: pointer;
+    padding: 8px;
+}
+
+.gallery{
+    margin: 8rem;
+    display: flex;
+}
+
+.Images{
+    width: 900px;
+    display: flex;
+
+}
+
+.gallery h1{
+    font-size: 10vmin;
+    display: flex;
+    padding: 10rem 2rem;
+    align-content: center;
+}
+
+#GalleryButton{
+    display: flex;
+    justify-content: center;
+}
+
+#GalleryButton a{
+    background: black;
+    color: white;
+    font-size: 7vmin;
+    padding: 6px 30px;
+    text-decoration: none;
+}
+
+#row1, #row2, #row3{
+  width:300px;
+  margin: 10px 5px;
+}
+
+img{
+    width: 100%;
+}
+
+.card{
+    width: 35rem;
+    height: 45rem;
+    margin: 10px 30px;
+    position: relative;
+}
+
+.card-info{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0%;
+    height: 15%;
+    width: 100%;
+    color: white;
+    background: black;
+    font-size: 1.0rem;
+    line-height: 35px;
+    padding: 5px 10px;
+    letter-spacing: 2px;
+}
+
+
+#Chilanga{
+    background: url(../Images/gallery/IMG-20220320-WA0009.jpg);
+    background-position: center center;
+    background-size: cover; 
+}
+
+#Kitchen{
+    background: url(../Images/gallery/IMG-20220320-WA0004.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+#weddingShoot{
+    background: url(../Images/gallery/photo46.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+#babyShoot{
+    background: url(../Images/gallery/photo2.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+#PhotoShoot{
+    background: url(../Images/gallery/photo4.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+#service{
+    margin: 10rem 4rem;
+}
+
+#service h1{
+    font-size: 5vmin;
+}
+
+.card-wrapper{
+    margin: 5rem 0;
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap;
+}
+
+#about{
+    margin: 10rem 4rem;
+}
+
+#about h1{
+    font-size: 5vmin;
+}
+
+
+.InfoContainer{
+    margin: 4rem 0;
+    display: flex;
+    justify-content: center;
+
+}
+
+.InfoContainer Imag{
+    width: 300px;
+}
+
+.InfoContainer img{
+    width: 100%;
+}
+
+.InfoPara{
+    display: flex;
+    font-weight: bold;
+    width: 40vw;
+    color: black;
+    font-size: 23px;
+    padding: 0 2rem;
+    align-items: center;
+}
+
+.InfoPara p{
+    margin: 1rem 0;
+}
+
+#contact{
+    margin-top: 10rem;
+    margin-right: 4rem;
+    margin-left: 4rem;
+    margin-bottom: 2rem;
+}
+
+#contact h1{
+    font-size: 5vmin;
+}
+
+.icons{
+    display: flex;
+    flex-flow: wrap;
+    margin: 5rem 0;
+}
+
+.icons a{
+    color: black;
+    margin: 40px 50px;
+}
+
+.fa-brands, .fa-solid{
+    font-size: 2.5vmin;
+    overflow-y: hidden;
+    font-weight: 300;
+}
+
+footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: black;
+    color: white;
+    font-size: 2vmin;
+}
+
+@media(max-width:1200px){
+
+    .gallery{
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    .gallery h1{
+        font-size: 5vmin;
+        padding: 0 0;
+    }
+
+    .Images{
+        width: 900px;
+    }
+
+    #row1, #row2, #row3{
+        width: 300px;
+    }
+    .icons a {
+        display: flex;
+        flex-direction: column;
+        margin: 20px 10px;
+    }
+
+
+}
+
+@media(max-width: 919px){
+
+    .btn{
+        display: block;
+    }     
+
+    .Navlist{
+        position: fixed;
+        background: black;
+        flex-direction: column;
+        top: 0%;
+        right: -160%;
+        min-width: 400px;
+        height: 100vh;
+    }
+    
+    .Navlist a{
+        font-size: 2.8vmin;
+        padding: 20px 40px;
+    }
+
+    .active{
+        right: 0;
+    }
+
+   #menu-cross{
+       position: absolute;
+       top: 0;
+       left: 0;
+       margin: 30px; 
+
+
+   } 
+    .Images{
+        width: 800px;
+    }
+
+    #row1, #row2, #row3{
+        width: 250px;
+    }
+
+    .InfoContainer{
+        flex-direction: column;
+    
+    }
+
+    .card-info{
+        font-size: 0.6;
+    }
+    .card-info li{
+        padding: 2px 20px;
+    }
+
+    .InfoPara{
+        width: 80vw;
+    }
+    .icons a {
+        display: flex;
+        flex-direction: column;
+        margin: 20px 10px;
+        text-decoration: none;
+    }
+
+}
+
+@media(max-width: 789px){
+
+    #BannerContainer{
+        height: 80vh;
+    }
+
+    #Info-section h1{
+        padding-top: 5rem;
+        font-size: 5vmin;
+    }
+
+    .Navlist{
+        min-width: 200px;
+    }
+
+    .Images{
+        width: 600px;
+    }
+
+    #row1, #row2, #row3{
+        width: 200px;
+    }
+
+    .card{
+        width: 35rem;
+        height: 40rem;
+        margin: 10px 30px;
+    }
+    .icons a {
+        display: flex;
+        flex-direction: column;
+        margin: 20px 10px;
+        text-decoration: none;
+       
+    }
+
+    .fa-brands, .fa-solid{
+        font-size: 3.0vmin;
+    }
+
+    footer{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        background: black;
+        color: white;
+        font-size: 2vmin;
+    }
+}
+
+@media(max-width: 576px) {
+    #BannerContainer{
+        height: 80vh;
+    }
+
+    #Logo{
+        font-size: 15px;
+    }
+
+    .btn{
+        font-size: 15px;
+    }
+
+    .Navlist{
+        min-width: 100px;
+    }
+
+    #Info-section h1{
+        padding-top: 5rem;
+        font-size: 5vmin;
+    }
+
+    .gallery{
+        margin: 2rem;
+    }
+
+    .Images{
+        width: 900px;
+        display: flex;
+    
+    }
+
+    #row1, #row2, #row3{
+        width: 80px;
+    }
+
+    
+    .card-wrapper{
+        margin: 0 0;
+        display: flex;
+        justify-content: center;
+        flex-flow: wrap;
+    }
+    .card{
+        width: 20rem;
+        height: 25rem;
+        margin: 10px 30px;
+    }
+
+    .card-info{
+        font-size: 10px;
+        padding: 1px;
+        line-height: 15px;
+    }
+
+    .InfoPara{
+        font-size: 10px;
+    }
+
+    #service, #about, #contact{
+        margin: 5rem 2rem;
+    }
+
+    .icon-media, .icon-phone, .icon-email{
+        margin: 10px 20px;
+       
+    }
+    .icons{
+        margin: 0 0;
+    }
+}
