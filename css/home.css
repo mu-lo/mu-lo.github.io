@@ -61,9 +61,9 @@ html::-webkit-scrollbar-thumb{
 }
 
 .Navlist a{
-    margin: 10px 50px;
+    margin: 5px 30px;
     color: white;
-    font-size: 16px;
+    font-size: 12px;
     text-decoration: none;
 }
 
@@ -81,7 +81,7 @@ html::-webkit-scrollbar-thumb{
 
 
  #Logo{
-    font-size: 30px;
+    font-size: 20px;
     color: white; 
 }
 
@@ -134,12 +134,13 @@ html::-webkit-scrollbar-thumb{
 #GalleryButton{
     display: flex;
     justify-content: center;
+    margin-top: -80px;
 }
 
 #GalleryButton a{
     background: black;
     color: white;
-    font-size: 7vmin;
+    font-size: 5vmin;
     padding: 6px 30px;
     text-decoration: none;
 }
@@ -149,14 +150,14 @@ html::-webkit-scrollbar-thumb{
   margin: 10px 5px;
 }
 
-img{
+.gallery img{
     width: 100%;
 }
 
 .card{
-    width: 35rem;
-    height: 45rem;
-    margin: 10px 30px;
+    width: 23rem;
+    height: 30rem;
+    margin: 10px 20px;
     position: relative;
 }
 
@@ -170,7 +171,7 @@ img{
     width: 100%;
     color: white;
     background: black;
-    font-size: 1.0rem;
+    font-size: 0.6rem;
     line-height: 35px;
     padding: 5px 10px;
     letter-spacing: 2px;
@@ -212,7 +213,7 @@ img{
 }
 
 #service h1{
-    font-size: 5vmin;
+    font-size: 30px;
 }
 
 .card-wrapper{
@@ -227,7 +228,7 @@ img{
 }
 
 #about h1{
-    font-size: 5vmin;
+    font-size: 30px;
 }
 
 
@@ -238,8 +239,8 @@ img{
 
 }
 
-.InfoContainer Imag{
-    width: 300px;
+.Imag{
+    width: 450px;
 }
 
 .InfoContainer img{
@@ -251,7 +252,7 @@ img{
     font-weight: bold;
     width: 40vw;
     color: black;
-    font-size: 23px;
+    font-size: 15px;
     padding: 0 2rem;
     align-items: center;
 }
@@ -268,7 +269,7 @@ img{
 }
 
 #contact h1{
-    font-size: 5vmin;
+    font-size: 30px;
 }
 
 .icons{
@@ -371,6 +372,10 @@ footer{
     
     }
 
+    #GalleryButton{
+        margin-top: 0px;
+    }
+
     .card-info{
         font-size: 0.6;
     }
@@ -380,7 +385,10 @@ footer{
 
     .InfoPara{
         width: 80vw;
+        font-size: 17px;
     }
+
+
     .icons a {
         display: flex;
         flex-direction: column;
@@ -418,6 +426,11 @@ footer{
         height: 40rem;
         margin: 10px 30px;
     }
+
+    .InfoPara{
+        font-size: 17px;
+    }
+
     .icons a {
         display: flex;
         flex-direction: column;
@@ -490,17 +503,31 @@ footer{
     }
 
     .card-info{
-        font-size: 10px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .card-info h2{
+        font-size: 0.8rem;
         padding: 1px;
         line-height: 15px;
+        
     }
 
     .InfoPara{
-        font-size: 10px;
+        font-size: 15px;
     }
 
     #service, #about, #contact{
         margin: 5rem 2rem;
+    }
+
+    #service h1, #about h1, #contact h1{
+        font-size: 25px;
+    }
+
+    .Imag img{
+        width: 300px;
     }
 
     .icon-media, .icon-phone, .icon-email{
